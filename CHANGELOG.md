@@ -11,11 +11,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Two further reproducible worked cases for Workbench import QA and bundle-read security, with exact source inputs, native MCP selections, observed checks and historical CLI plans. Standalone workflow installations now include self-contained procedure cards and a validation-retry handoff.
+
+- A consistent selection-to-use path linking local discovery, exact reviewed IDs, Core artifact review and supported direct installation, with a public distribution measurement.
+- A scoped, content-fingerprint-bound review of 20 editorially prominent skills, with explicit compatibility mappings for eight duplicate groups and complete offline support files for their 17 existing IDs.
+
+- Workbench import of selection evidence, a recorded MCP selection and CLI plan example, and optional local feedback preview/export. Imported data remains in page memory; artifact consistency does not certify skill suitability.
+- Explicit all-term matching, required terms, normalized category facets and tag filters in Core search, with match explanations and factual evidence traces. The web catalog offers literal and explicit approximate modes, shareable search controls, and matching explanations while preserving catalog order.
+- Local MCP bundle inspection through `list_skill_files` and `read_skill_file`, with catalog-bound paths and digests, bounded inert text reads, and explicit handling of links, binary files, missing payloads and older catalogs.
 - Catalog shortlist comparison with declared risk, setup, plugin packaging, source, and license metadata; a previewable agent brief carries the selected IDs, catalog version, project goal, and target into agent-owned stack selection.
 - Skill bundle links pinned to the catalog release and a Workbench guide from catalog selection to manifest and plan review.
 
 ### Fixed
 
+- npm skill packages exclude generated Python bytecode and cache directories left by local tests, with a real pack-list regression and preserved source/support files.
+- CLI native filesystem failures now return a bounded AAS error envelope instead of failing error-schema validation and exposing a stack trace.
+
+- Installer retrieval now uses a release-verified partial/sparse checkout of complete canonical skills, reducing temporary worktree bytes by 70.9% in the recorded same-release comparison. Failed retrieval cleans its temporary source and leaves targets unchanged.
+- Plan preview infers a sole manifest target and rejects a runtime with a different catalog identity. Source-only PR classification no longer treats an unchanged Git copy origin as a mutation; generated destinations and renames remain blocked.
+- Replaced two empty session procedures with bounded optional helpers; corrected priority skill examples for authentication, MCP evaluation, analytics, refunds, caching, replanning and text diagnostics. Removed unsupported quality/marketing assurances and clarified version, permission and integration limits.
+
+- MCP artifact requests can exceed the ordinary 4 KiB limit within the existing 256 KiB frame ceiling. Safely parsed size errors retain a bounded request ID, avoiding an uncorrelated error and client timeout; ordinary queries and unrelated metadata remain constrained.
+- Workbench compares the project profile as well as manifest, catalog, target and selected IDs; changing an artifact clears stale consistency results while new digests are checked.
 - Skill documentation links resolve bundled files against the same repository release; fragment links stay on the current skill page under the GitHub Pages base path. Outline and rendered heading IDs now agree for inline markup, duplicate headings, and non-English text.
 - Workflow installation guidance uses explicit skill selection and a dry run; the shortlist appears before catalog results and handles clipboard failures with a selectable brief.
 - Updated the web app's transitive `qs` dependency to its patched release.

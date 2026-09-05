@@ -22,6 +22,23 @@ If bundles are your toolbox, workflows are your execution playbook.
 
 You can combine workflows with bundles from [bundles.md](bundles.md) when you need broader coverage.
 
+The [selection-to-use example](../../README.md#from-selection-to-use) connects local
+MCP discovery, reviewed exact IDs, optional Core artifacts and a supported direct
+installer preview. A Core plan remains a review artifact; the direct installer
+previews its own changes before an authorized installation.
+
+## Recorded worked cases
+
+- [Workbench import QA](../examples/workflows/workbench-qa/README.md): real MCP selection, 23 component/parser checks, and a consistent CLI plan. Browser coverage limits are explicit.
+- [Bundle-read security review](../examples/workflows/bundle-security/README.md): scoped trust boundaries, seven executed containment/integrity checks, and real selection/plan evidence.
+
+- [MCP search contract review](../examples/workflows/mcp-contract/README.md): actual
+  Codex MCP selection, seven-skill immutable plan, 36 recorded calls and five
+  reproducible source checks. This develops the existing AI-agent-system workflow.
+
+Each case distinguishes observed checks from untested production or model-performance
+claims. New cases must retain their exact input revision and original evidence.
+
 ---
 
 ## Workflow: Ship a SaaS MVP
