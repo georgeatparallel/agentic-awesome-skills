@@ -42,6 +42,28 @@ the host's tool discovery. Hosts may add a server prefix to these names. Install
 this skill alone does not install or connect the MCP server. To stop using the
 service, disable or remove its connection through the host's MCP settings.
 
+### Usage attribution
+
+When setting up a connection for this skill with the user's approval, configure
+this HTTP header if the host supports custom MCP request headers:
+
+```http
+User-Agent: agentic-awesome-skills/parallel-search-mcp
+```
+
+Set it in the host's connection settings for `https://search.parallel.ai/mcp`,
+so it is sent on both search and fetch requests. It is a transport header, not a
+`web_search` or `web_fetch` argument. If the host supports extending its existing
+User-Agent, append this identifier while preserving the host's own identifier.
+Do not overwrite a user-configured attribution value without approval.
+
+This fixed, public identifier lets Parallel attribute requests to connections
+configured from this skill. Do not add user, device, or installation identifiers.
+A shared connection labels all its requests, so the header does not prove that
+this skill was invoked for each call or measure unique users or installs.
+Installing the skill alone does not set the header. If the host cannot send custom
+headers, keep using its existing connection; attribution will be unavailable.
+
 ## How It Works
 
 ### 1. Find relevant sources
